@@ -1,0 +1,34 @@
+/* styles.css */
+
+/* Kontener dla elementu z pozycjonowaniem absolute */
+.container {
+    position: relative; /* Ustalamy kontener jako punkt odniesienia dla absolute */
+    height: 2000px;
+    width: 300px;
+    background-color: lightgray;
+    margin-bottom: 100px; /* Aby pokazać przewijanie strony */
+}
+
+/* Element z pozycjonowaniem absolute */
+.element-absolute {
+    position: absolute;
+    top: 30%;  /* Odległość od góry kontenera */
+    left: 40%; /* Odległość od lewej strony kontenera */
+    background-color: #4CAF50;
+    padding: 2px;
+}
+
+/* Element z pozycjonowaniem fixed */
+.element-fixed {
+    position: fixed;
+    top: 40px;   /* Odległość od góry okna */
+    right: 20px; /* Odległość od prawej strony okna */
+    background-color: #FF5722;
+    color: white;
+    padding: 10px;
+}
+/*
+Element .element-absolute: Jest umiejscowiony 50px od góry i 50px od lewej strony kontenera o klasie .container. 
+Element zostaje "wyjęty" z normalnego przepływu dokumentu, więc inne elementy nie wpływają na jego pozycję.
+Element .element-fixed: Jest umiejscowiony 20px od góry i 20px od prawej strony okna przeglądarki.
+ Element z position: fixed pozostaje w tej samej pozycji, nawet po przewinięciu strony.

@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* Przykład z jedną wartością dla margin i padding */
+.element-margin-padding-one-entry {
+  margin: 20px; /* Margines 20px z każdej strony */
+  padding: 15px; /* Wypełnienie 15px z każdej strony */
+  background-color: #4caf50;
+  text-align: center;
+}
+
+/* Przykład z dwoma wartościami dla margin i padding */
+.element-margin-padding-two-entries {
+  margin: 20px 10px; /* 20px na górze i dole, 10px po lewej i prawej */
+  padding: 15px 5px; /* 15px na górze i dole, 5px po lewej i prawej */
+  background-color: #2196f3;
+  text-align: center;
+}
+
+/* Przykład z trzema wartościami dla margin i padding */
+.element-margin-padding-three-entries {
+  margin: 20px 10px 5px; /* 20px na górze, 10px po lewej i prawej, 5px na dole */
+  padding: 15px 10px 5px; /* 15px na górze, 10px po lewej i prawej, 5px na dole */
+  background-color: #ff5722;
+  text-align: center;
+}
+
+/* Przykład z czterema wartościami dla margin i padding */
+.element-margin-padding-four-entries {
+  margin: 20px 10px 5px 30px; /* 20px na górze, 10px po prawej, 5px na dole, 30px po lewej */
+  padding: 15px 10px 5px 25px; /* 15px na górze, 10px po prawej, 5px na dole, 25px po lewej */
+  background-color: #9c27b0;
+  text-align: center;
+
+}
+
+/* Przykład z centrowaniem */
+.element-auto {
+  width: 300px;
+  margin: 0 auto; /* Margines automatyczny po lewej i prawej, co centrowuje element */
+  padding: 20px;
+  background-color: #ff9800;
+
+}
+
+.element-minus-value {
+    width: 300px;
+    padding: -150px -200px -200px 25px;
+    background-color:yellowgreen;
+  }
+
+/*margin-top, margin-right, margin-bottom, margin-left – ustawianie marginesów dla poszczególnych stron.
+padding-top, padding-right, padding-bottom, padding-left – ustsawianie wypełnienia dla poszczególnych stron.
+
+Marginesy i wypełnienia mogą być ustawione w różnych jednostkach miary, takich jak:
+
+px – piksele (jednostka absolutna)
+em – jednostka względna do wielkości czcionki
+rem – jednostka względna do wielkości czcionki root (elementu <html>)
+% – procentowe wymiary względem kontenera
+vw/vh – jednostki zależne od rozmiaru okna przeglądarki (viewport width, viewport height)

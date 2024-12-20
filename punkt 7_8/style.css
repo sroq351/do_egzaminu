@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smoth;
+}
+
+.flex-wrapper {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  margin: 20px;
+  border: 10px solid red;
+  box-sizing: content-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* w pionie */
+  align-items: center; /* w poziomie */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* w poziomie */
+  align-items: center; /* w pionie */
+  gap: 32px;
+}
+
+.flex-item-c {
+  flex-grow: 1;
+  background-color: darkred;
+  color: white;
+}
+
+.grid-wrapper {
+  border: 25px solid green;
+  padding: 10px;
+  width: 1100px;
+  height: 300px;
+  display: grid;
+  gap: 16px;
+  /* grid-template-columns: 100px 100px 100px 100px; */
+  /* grid-template-columns: repeat(3, 100px) 200px; */
+  grid-template-columns: 100px 1fr 50px 2fr;
+  grid-template-areas:
+    "b b b ."
+    "d . c c"
+    ". a a a";
+}
+
+.grid-item-a {
+  grid-area: a;
+}
+
+.grid-item-b {
+  grid-area: b;
+}
+
+.grid-item-c {
+  grid-area: c;
+}
+
+.grid-item-d {
+  grid-area: d;
+}
+
+
+
+.grid-wrapper > div {
+  border: 1px solid blue;
+}
+
+/* flex */
+.container {
+  display: flex;
+  justify-content: space-between; /* Rozmieszcza elementy z równymi odstępami */
+  align-items: center; /* Wyrównuje elementy w pionie */
+}
+
+.item {
+  background-color: #4caf50;
+  padding: 20px;
+  text-align: center;
+}
+
+/* grid */
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolumny o równych szerokościach */
+  grid-gap: 10px; /* Odstęp między elementami */
+}
+
+.item-grid {
+  background-color: red;
+  padding: 20px; /* margines */
+  text-align: center;
+}

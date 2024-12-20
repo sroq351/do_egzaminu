@@ -1,0 +1,17 @@
+.animated-element {
+  width: 300px;
+  height: 150px;
+  background-color: lightblue;
+  color: red;
+  text-align: center;
+  line-height: 150px;
+  font-size: 30px;
+  border-radius: 20px;
+  transition: all 1s ease-in-out; /* Płynna animacja wszystkich zmian */
+}
+
+.animated-element:hover {
+  background-color: blue; /* Zmiana koloru tła */
+  rotate: 180deg;
+  transform: translate(-100px); /* przesuniecie w prawo */
+}

@@ -1,0 +1,85 @@
+/* Selektor tagu (elementu) */
+h1 {
+  color: blue; /* Kolor tekstu dla nagłówka h1 */
+  text-align: center;
+}
+
+p {
+  font-size: 16px; /* Ustawiamy rozmiar czcionki dla wszystkich elementów <p> */
+  color: #555; /* Kolor tekstu dla paragrafów */
+}
+
+/* Selektor klasy */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff; /* Kolor tytułu */
+}
+
+.description {
+  font-size: 18px;
+  color: #333; /* Kolor tekstu dla opisów */
+}
+
+/* Selektor identyfikatora */
+#content {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px; /* Zaokrąglone rogi dla sekcji content */
+}
+
+/* Selektor atrybutu */
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="password"] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Zmiana koloru przy najechaniu */
+}
+
+/* Selektor potomka */
+.list-section ul {
+  padding-left: 20px;
+}
+
+.list-section li {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Selektor bezpośredniego dziecka */
+#content > .title {
+  color: green;
+}
+
+/* Styl dla całej listy */
+.item-list-co-drugi-element {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Stylowanie co drugiego elementu (używając :nth-child) */
+.item-list-co-drugi-element li:nth-child(even) {
+  background-color: #c8e6c9; /* Tło co drugiego elementu na zielono */
+  color: #00796b; /* Zmiana koloru tekstu na ciemnozielony */
+}

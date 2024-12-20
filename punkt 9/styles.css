@@ -1,0 +1,93 @@
+/* Style domyślne (desktop) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image {
+  flex: 1;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Stylowanie dla tabletów (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+}
+
+/* Stylowanie dla urządzeń mobilnych (max-width: 600px) */
+@media (max-width: 600px) {
+  header {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+/*
+Wyjaśnienie:
+Desktop (domyślne style):
+
+Używamy flex dla kontenera .container, aby wyświetlić dwie sekcje (.text i .image) obok siebie.
+Nagłówek i stopka mają standardowe style, w tym wyśrodkowany tekst.
+
+Tablet (max-width: 1024px):
+
+Używamy @media (max-width: 1024px) do zmiany układu na tabletach. Kontener .container zmienia się na układ kolumnowy (flex-direction: column), więc elementy będą układały się jeden pod drugim.
+Obrazek w .image dostosowuje się do szerokości kontenera (max-width: 100%), aby się nie rozciągał.
+
+Mobile (max-width: 600px):
+
+Na urządzeniach mobilnych zmieniamy rozmiar czcionki w nagłówku i stopce, aby lepiej pasowały do mniejszych ekranów.
+Zmniejszamy padding w kontenerze i stopce, aby zaoszczędzić miejsce na ekranie.
+Jak to działa:
+
+Desktop (większy ekran): Sekcje .text i .image są obok siebie dzięki flexbox.
+
+Tablet: Obie sekcje są ustawione jedna pod drugą. Obrazek dopasowuje się do szerokości kontenera.
+
+Mobile: Zmniejszają się czcionki, a elementy są lepiej dostosowane do małych ekranów, zapewniając czytelność.
